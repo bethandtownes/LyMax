@@ -29,88 +29,140 @@ namespace frontend {
 
 class GuiView;
 
+
+
+// class EmacsStyleQLineEdit : public QObject {
+//   Q_OBJECT
+//  protected:
+//   bool eventFilter(QObject *obj, QEvent *event) override;
+
+//  public:
+//   EmacsStyle(QObject * o) {parent = o;}
+//   ~EmacsStyle() {}
+//  private:
+//   QObject * parent;
+// };
+
+class QLineEditEmacsStyleFilter : public QObject {
+  Q_OBJECT
+ protected:
+  bool eventFilter(QObject *obj, QEvent *event) override;
+
+ public:
+  QLineEditEmacsStyleFilter(QObject * o) {parent = o;}
+  ~QLineEditEmacsStyleFilter() {}
+ private:
+  QObject * parent;
+};
+
+
+class QTreeViewEmacsStyleFilter : public QObject {
+  Q_OBJECT
+ protected:
+  bool eventFilter(QObject *obj, QEvent *event) override;
+
+ public:
+  QTreeViewEmacsStyleFilter(QObject * o) {parent = o;}
+  ~QTreeViewEmacsStyleFilter() {}
+ private:
+  QObject * parent;
+};
+
+
+
+
+
+
 class TocWidget : public QWidget, public Ui::TocUi
 {
-	Q_OBJECT
-public:
-	///
-	TocWidget(GuiView & gui_view, QWidget * parent = 0);
+  Q_OBJECT
+ public:
+  ///
+  TocWidget(GuiView & gui_view, QWidget * parent = 0);
 
-	/// Initialise GUI.
-	void init(QString const & str);
-	///
-	void doDispatch(Cursor & cur, FuncRequest const & fr);
-	///send request to lyx::dispatch with proper guiview handle
-	///(if ToC is detached current_view can be different window)
-	void sendDispatch(FuncRequest fr);
-	///
-	bool getStatus(Cursor & cur, FuncRequest const & fr, FuncStatus & status)
-		const;
+  /// Initialise GUI.
+  void init(QString const & str);
+  ///
+  void doDispatch(Cursor & cur, FuncRequest const & fr);
+  ///send request to lyx::dispatch with proper guiview handle
+  ///(if ToC is detached current_view can be different window)
+   void sendDispatch(FuncRequest fr);
+  ///
+  bool getStatus(Cursor & cur, FuncRequest const & fr, FuncStatus & status)
+      const;
 
-public Q_SLOTS:
-	/// Schedule an update of the dialog, delaying expensive operations
-	void updateView();
-	/// Update completely without delay
-	void updateViewNow();
+ public Q_SLOTS:
+  /// Schedule an update of the dialog, delaying expensive operations
+  void updateView();
+  /// Update completely without delay
+  void updateViewNow();
 
-protected Q_SLOTS:
-	///
-	void select(QModelIndex const & index);
-	///
-	void goTo(QModelIndex const &);
+ protected Q_SLOTS:
+  ///
+  void select(QModelIndex const & index);
+  ///
+  void goTo(QModelIndex const &);
 
-	void on_tocTV_activated(QModelIndex const &);
-	void on_tocTV_pressed(QModelIndex const &);
-	void on_updateTB_clicked();
-	void on_sortCB_stateChanged(int state);
-	void on_persistentCB_stateChanged(int state);
-	void on_depthSL_valueChanged(int depth);
-	void on_typeCO_currentIndexChanged(int value);
-	void on_moveUpTB_clicked();
-	void on_moveDownTB_clicked();
-	void on_moveInTB_clicked();
-	void on_moveOutTB_clicked();
-	void filterContents();
+  void on_tocTV_activated(QModelIndex const &);
+  void on_tocTV_pressed(QModelIndex const &);
+  void on_updateTB_clicked();
+  void on_sortCB_stateChanged(int state);
+  void on_persistentCB_stateChanged(int state);
+  void on_depthSL_valueChanged(int depth);
+  void on_typeCO_currentIndexChanged(int value);
+  void on_moveUpTB_clicked();
+  void on_moveDownTB_clicked();
+  void on_moveInTB_clicked();
+  void on_moveOutTB_clicked();
+  void filterContents();
 
-	void showContextMenu(const QPoint & pos);
+  void showContextMenu(const QPoint & pos);
 
-private Q_SLOTS:
-	/// Perform the expensive update operations
-	void finishUpdateView();
+ private Q_SLOTS:
+  /// Perform the expensive update operations
+  void finishUpdateView();
 
-private:
-	///
-	void enableControls(bool enable = true);
-	///
-	bool canOutline()
-		{ return current_type_ == "tableofcontents"; }
-	/// It is not possible to have synchronous navigation in a correct
-	/// and efficient way with the label and change type because Toc::item()
-	/// does a linear search. Even when fixed, it might even not be desirable
-	/// to do so if we want to support drag&drop of labels and references.
-	bool canNavigate()
-		{ return current_type_ != "label" && current_type_ != "change"; }
-	///
-	bool isSortable()
-		{ return current_type_ != "tableofcontents"; }
-	///
-	void setTreeDepth(int depth);
-	///
-	void outline(FuncCode func_code);
-	/// finds the inset that is connected to the current item,
-	/// if any, otherwise return null
-	Inset * itemInset() const;
-	///
-	QString current_type_;
 
-	/// depth of list shown
-	int depth_;
-	/// persistence of uncollapsed nodes in toc view
-	bool persistent_;
-	///
-	GuiView & gui_view_;
-	// Timer for scheduling expensive update operations
-	QTimer * timer_;
+ protected:
+  // virtual void keyPressEvent(QKeyEvent* event);
+  bool eventFilter(QObject *obj, QEvent *event) override;
+        
+  
+ private:
+  ///
+  QLineEditEmacsStyleFilter * emacsLE;
+  QTreeViewEmacsStyleFilter * emacsTV;
+  void enableControls(bool enable = true);
+  ///
+  bool canOutline()
+  { return current_type_ == "tableofcontents"; }
+  /// It is not possible to have synchronous navigation in a correct
+  /// and efficient way with the label and change type because Toc::item()
+  /// does a linear search. Even when fixed, it might even not be desirable
+  /// to do so if we want to support drag&drop of labels and references.
+  bool canNavigate()
+  { return current_type_ != "label" && current_type_ != "change"; }
+  ///
+  bool isSortable()
+  { return current_type_ != "tableofcontents"; }
+  ///
+  void setTreeDepth(int depth);
+  ///
+  void outline(FuncCode func_code);
+  /// finds the inset that is connected to the current item,
+  /// if any, otherwise return null
+  Inset * itemInset() const;
+  ///
+  QString current_type_;
+
+  /// depth of list shown
+  int depth_;
+  /// persistence of uncollapsed nodes in toc view
+  bool persistent_;
+  ///
+  GuiView & gui_view_;
+  // Timer for scheduling expensive update operations
+  QTimer * timer_;
 };
 
 } // namespace frontend

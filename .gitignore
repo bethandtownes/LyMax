@@ -23,3 +23,5 @@ CMakeLists.txt.user
 GPATH
 GRTAGS
 GTAGS
+debugbuild
+
