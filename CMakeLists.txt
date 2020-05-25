@@ -11,6 +11,8 @@ set(LYX_PROJECT LyX)
 # Instruct cmake to not use gnu extensions,
 # this prevents the mix of '-std=c++*' and '-std=gnu++*' flags
 set(CMAKE_CXX_EXTENSIONS OFF)
+# set(CMAKE_PREFIX_PATH "~/.local/Qt/5.14.2/clang_64/")
+# set(QT_QMAKE_EXECUTABLE "~/.local/Qt/5.14.2/clang_64/bin/qmake")
 
 enable_testing()
 
@@ -135,7 +137,7 @@ LYX_OPTION(MERGE_FILES      "Merge source files into one compilation unit" OFF A
 LYX_OPTION(MERGE_REBUILD    "Rebuild generated files from merged files build" OFF ALL)
 LYX_OPTION(QUIET            "Don't generate verbose makefiles" OFF ALL)
 LYX_OPTION(INSTALL_PREFIX   "Install path for LyX" OFF ALL)
-LYX_OPTION(BUNDLE           "Build bundle  (experimental) " OFF ALL)
+LYX_OPTION(BUNDLE           "Build bundle  (experimental) " ON ALL)
 LYX_OPTION(ENABLE_URLTESTS  "Enable for URL tests" OFF ALL)
 LYX_OPTION(ENABLE_EXPORT_TESTS "Enable for export tests" OFF ALL)
 LYX_OPTION(ENABLE_KEYTESTS  "Enable for keytests" OFF ALL)
@@ -166,7 +168,7 @@ LYX_OPTION(DEPENDENCIES_DOWNLOAD "Download dependencies for MSVC 10" OFF MSVC)
 
 # APPLE specific
 LYX_OPTION(DMG                   "Build as Mac bundle, needed for .dmg  (experimental) " OFF MAC)
-LYX_OPTION(COCOA                 "Use Cocoa on Mac" OFF MAC)
+LYX_OPTION(COCOA                 "Use Cocoa on Mac" ON MAC)
 
 
 if(help OR HELP)
@@ -629,7 +631,7 @@ if(NOT MSVC)
 	endif()
 	set(LYX_CXX_FLAGS "-Wall -Wunused-parameter ${LYX_GCC11_MODE}")	
 	# set(LYX_CXX_FLAGS "-Wall -Wunused-parameter ${LYX_GCC11_MODE}")
-	if(LYX_CXX_FLAGS MATCHES "\\+\\+(14|11|98)")
+	if(LYX_CXX_FLAGS MATCHES "\\+\\+(17|14|11|98)")
 	  # Thanks to Brad King <brad.king@kitware.com>
 	  # for the pointer to https://cmake.org/cmake/help/v3.6/variable/CMAKE_CXX_STANDARD.html
 	  # This allows us to use QT5.7 with recent g++ (version >= 4.9) compilers

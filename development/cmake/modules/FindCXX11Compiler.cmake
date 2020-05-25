@@ -35,10 +35,10 @@ INCLUDE(CheckCXXSourceCompiles)
 INCLUDE(FindPackageHandleStandardArgs)
 
 if (CMAKE_CXX_COMPILER_ID MATCHES "^([cC]lang|AppleClang)$")
-  set(CXX11_FLAG_CANDIDATES "--std=c++11 -Wno-deprecated-register")
+  set(CXX11_FLAG_CANDIDATES "--std=c++17 -Wno-deprecated-register")
 else()
   if (CYGWIN)
-    set(CXX11_FLAG_CANDIDATES "--std=gnu++11")
+    set(CXX11_FLAG_CANDIDATES "--std=gnu++17")
   else()
     if (MSVC)
       # MSVC does not have a general C++11 flag, one can only switch off

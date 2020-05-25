@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2020-01-10 22:09-0500\n"
+"POT-Creation-Date: 2020-05-24 00:38-0400\n"
 "PO-Revision-Date: 2011-04-26 10:58-0400\n"
 "Last-Translator: Marius Ionescu <felijohn@gmail.com>\n"
 "Language-Team: Romanian <ro-kde@yahoogroups.com>\n"
@@ -22283,8 +22283,12 @@ msgstr "Material extern"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Minted Listings"
-msgstr "Listă de figuri"
+msgid "Itemize Bullets"
+msgstr "Listă nenumerotată"
+
+#: lib/examples/Articles:0
+msgid "Feynman Diagrams"
+msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22293,8 +22297,8 @@ msgstr "&Previzualizare instantanee"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "XY-Figure"
-msgstr "Figură"
+msgid "Minted Listings"
+msgstr "Listă de figuri"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22303,15 +22307,11 @@ msgstr "În cadrul documentului (inline)"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Itemize Bullets"
-msgstr "Listă nenumerotată"
+msgid "XY-Figure"
+msgstr "Figură"
 
 #: lib/examples/Articles:0
 msgid "XY-Pic"
-msgstr ""
-
-#: lib/examples/Articles:0
-msgid "Feynman Diagrams"
 msgstr ""
 
 #: lib/examples/Articles:0
@@ -22321,12 +22321,12 @@ msgstr "&Grafică"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Serial Letter 3"
+msgid "Serial Letter 2"
 msgstr "Scrisoare"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Serial Letter 2"
+msgid "Serial Letter 3"
 msgstr "Scrisoare"
 
 #: lib/examples/Articles:0
@@ -22341,6 +22341,15 @@ msgstr "Locație"
 
 #: lib/examples/Articles:0
 #, fuzzy
+msgid "LilyPond Book"
+msgstr "LilyPond"
+
+#: lib/examples/Articles:0
+msgid "Noweb Listerrors"
+msgstr ""
+
+#: lib/examples/Articles:0
+#, fuzzy
 msgid "Multilingual Captions"
 msgstr "Opțiuni suplimentare"
 
@@ -22350,17 +22359,8 @@ msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "LilyPond Book"
-msgstr "LilyPond"
-
-#: lib/examples/Articles:0
-#, fuzzy
 msgid "Noweb2LyX"
 msgstr "NoWeb"
-
-#: lib/examples/Articles:0
-msgid "Noweb Listerrors"
-msgstr ""
 
 #: lib/examples/Articles:0 src/frontends/qt/GuiDocument.cpp:1748
 msgid "Modules"
@@ -22373,20 +22373,16 @@ msgstr "LandscapeSlide"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Beamer (Complex)"
-msgstr "Notă nouă"
-
-#: lib/examples/Articles:0
-#, fuzzy
 msgid "Foils"
 msgstr "Foilhead"
 
 #: lib/examples/Articles:0
-msgid "Welcome"
-msgstr ""
+#, fuzzy
+msgid "Beamer (Complex)"
+msgstr "Notă nouă"
 
 #: lib/examples/Articles:0
-msgid "Multilingual Typesetting with CJKutf8"
+msgid "Welcome"
 msgstr ""
 
 #: lib/examples/Articles:0
@@ -22394,9 +22390,18 @@ msgid "Multilingual Typesetting with platex"
 msgstr ""
 
 #: lib/examples/Articles:0
+msgid "Multilingual Typesetting with CJKutf8"
+msgstr ""
+
+#: lib/examples/Articles:0
 #, fuzzy
 msgid "IEEE Transactions Journal"
 msgstr "Tranziție"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "Mathematical Monthly"
+msgstr "Mathematica"
 
 #: lib/examples/Articles:0
 msgid "Springers Global Journal Template (V. 3)"
@@ -22409,13 +22414,37 @@ msgstr "Tranziție"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Mathematical Monthly"
-msgstr "Mathematica"
+msgid "02 Foreword"
+msgstr "CuvîntCheie"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "00 Main File"
-msgstr "Parametrii listă"
+msgid "01 Dedication"
+msgstr "Dedicație"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "06 Part"
+msgstr "Part"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "03 Preface"
+msgstr "Loc"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "07 Chapter"
+msgstr "Capitol"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "10 Solutions"
+msgstr "Soluție"
+
+#: lib/examples/Articles:0
+msgid "05 Acronym"
+msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22429,13 +22458,8 @@ msgstr "Acknowledgements"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "10 Solutions"
-msgstr "Soluție"
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "02 Foreword"
-msgstr "CuvîntCheie"
+msgid "09 Glossary"
+msgstr "Glosar"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22444,32 +22468,27 @@ msgstr "Apendix"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "07 Chapter"
-msgstr "Capitol"
+msgid "00 Main File"
+msgstr "Parametrii listă"
 
 #: lib/examples/Articles:0
-#, fuzzy
-msgid "01 Dedication"
-msgstr "Dedicație"
-
-#: lib/examples/Articles:0
-msgid "05 Acronym"
+msgid "06 Acronym"
 msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "03 Preface"
-msgstr "Loc"
+msgid "05 Contributor List"
+msgstr "Listă de Tabele"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "06 Part"
+msgid "07 Part"
 msgstr "Part"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "09 Glossary"
-msgstr "Glosar"
+msgid "08 Author"
+msgstr "Autor"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22480,25 +22499,6 @@ msgstr "Apendix"
 #, fuzzy
 msgid "10 Glossary"
 msgstr "Glosar"
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "05 Contributor List"
-msgstr "Listă de Tabele"
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "08 Author"
-msgstr "Autor"
-
-#: lib/examples/Articles:0
-msgid "06 Acronym"
-msgstr ""
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "07 Part"
-msgstr "Part"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22517,13 +22517,13 @@ msgstr "Capitol"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Main File"
-msgstr "Parametrii listă"
+msgid "Chapter 2"
+msgstr "Capitol"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Chapter 2"
-msgstr "Capitol"
+msgid "Main File"
+msgstr "Parametrii listă"
 
 #: lib/examples/Articles:0
 msgid "PhD Thesis"
@@ -38643,11 +38643,11 @@ msgstr "Cuvînt necunoscut:"
 #~ msgid "No Branches Set for Document!"
 #~ msgstr "Documente"
 
-#, fuzzy, c-format
+#, fuzzy
 #~ msgid "Start New Environment (%1$s)"
 #~ msgstr "Mediu \"Gather\""
 
-#, fuzzy, c-format
+#, fuzzy
 #~ msgid "Start New Parent Environment (%1$s)"
 #~ msgstr "Mediu \"Gather\""
 
@@ -38659,7 +38659,7 @@ msgstr "Cuvînt necunoscut:"
 #~ msgid "Verbatim Input*"
 #~ msgstr "Verbatim"
 
-#, fuzzy, c-format
+#, fuzzy
 #~ msgid "Information regarding %1$s '%2$s'"
 #~ msgstr "Nu decomprimă imaginea înainte de exportare în LaTeX"
 

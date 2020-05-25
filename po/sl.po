@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX 1.3.4\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2020-01-10 22:09-0500\n"
+"POT-Creation-Date: 2020-05-24 00:38-0400\n"
 "PO-Revision-Date: 2004-01-02 23:55+0100\n"
 "Last-Translator:  Roman Maurer <>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -22856,8 +22856,12 @@ msgstr "Zunanji material"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Minted Listings"
-msgstr "Seznam tabel"
+msgid "Itemize Bullets"
+msgstr "Alineje"
+
+#: lib/examples/Articles:0
+msgid "Feynman Diagrams"
+msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22866,8 +22870,8 @@ msgstr "Takojšnji &ogled"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "XY-Figure"
-msgstr "Slika"
+msgid "Minted Listings"
+msgstr "Seznam tabel"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22876,15 +22880,11 @@ msgstr "&Vključeno"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Itemize Bullets"
-msgstr "Alineje"
+msgid "XY-Figure"
+msgstr "Slika"
 
 #: lib/examples/Articles:0
 msgid "XY-Pic"
-msgstr ""
-
-#: lib/examples/Articles:0
-msgid "Feynman Diagrams"
 msgstr ""
 
 #: lib/examples/Articles:0
@@ -22894,12 +22894,12 @@ msgstr "&Grafika"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Serial Letter 3"
+msgid "Serial Letter 2"
 msgstr "Pismo"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Serial Letter 2"
+msgid "Serial Letter 3"
 msgstr "Pismo"
 
 #: lib/examples/Articles:0
@@ -22914,6 +22914,15 @@ msgstr "Lokacija"
 
 #: lib/examples/Articles:0
 #, fuzzy
+msgid "LilyPond Book"
+msgstr "LilyPond"
+
+#: lib/examples/Articles:0
+msgid "Noweb Listerrors"
+msgstr ""
+
+#: lib/examples/Articles:0
+#, fuzzy
 msgid "Multilingual Captions"
 msgstr "Dodatne izbire za LaTeX"
 
@@ -22923,17 +22932,8 @@ msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "LilyPond Book"
-msgstr "LilyPond"
-
-#: lib/examples/Articles:0
-#, fuzzy
 msgid "Noweb2LyX"
 msgstr "NoWeb"
-
-#: lib/examples/Articles:0
-msgid "Noweb Listerrors"
-msgstr ""
 
 #: lib/examples/Articles:0 src/frontends/qt/GuiDocument.cpp:1748
 #, fuzzy
@@ -22947,13 +22947,13 @@ msgstr "PrečnaProsojnica"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Beamer (Complex)"
-msgstr "Nova postavka"
+msgid "Foils"
+msgstr "GlavaProsojnice"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Foils"
-msgstr "GlavaProsojnice"
+msgid "Beamer (Complex)"
+msgstr "Nova postavka"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22961,17 +22961,22 @@ msgid "Welcome"
 msgstr "Dobrodošli v LyXu!"
 
 #: lib/examples/Articles:0
-msgid "Multilingual Typesetting with CJKutf8"
+msgid "Multilingual Typesetting with platex"
 msgstr ""
 
 #: lib/examples/Articles:0
-msgid "Multilingual Typesetting with platex"
+msgid "Multilingual Typesetting with CJKutf8"
 msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
 msgid "IEEE Transactions Journal"
 msgstr "Prehod"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "Mathematical Monthly"
+msgstr "Mathematica"
 
 #: lib/examples/Articles:0
 msgid "Springers Global Journal Template (V. 3)"
@@ -22984,13 +22989,37 @@ msgstr "Prehod"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Mathematical Monthly"
-msgstr "Mathematica"
+msgid "02 Foreword"
+msgstr "Ključna beseda"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "00 Main File"
-msgstr "Manjkajoči argument"
+msgid "01 Dedication"
+msgstr "Posvetilo"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "06 Part"
+msgstr "Del"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "03 Preface"
+msgstr "Umesti"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "07 Chapter"
+msgstr "Poglavje"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "10 Solutions"
+msgstr "Rešitev"
+
+#: lib/examples/Articles:0
+msgid "05 Acronym"
+msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -23003,14 +23032,8 @@ msgid "04 Acknowledgements"
 msgstr "Priznanja"
 
 #: lib/examples/Articles:0
-#, fuzzy
-msgid "10 Solutions"
-msgstr "Rešitev"
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "02 Foreword"
-msgstr "Ključna beseda"
+msgid "09 Glossary"
+msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -23019,39 +23042,11 @@ msgstr "Dodatek"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "07 Chapter"
-msgstr "Poglavje"
+msgid "00 Main File"
+msgstr "Manjkajoči argument"
 
 #: lib/examples/Articles:0
-#, fuzzy
-msgid "01 Dedication"
-msgstr "Posvetilo"
-
-#: lib/examples/Articles:0
-msgid "05 Acronym"
-msgstr ""
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "03 Preface"
-msgstr "Umesti"
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "06 Part"
-msgstr "Del"
-
-#: lib/examples/Articles:0
-msgid "09 Glossary"
-msgstr ""
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "09 Appendix"
-msgstr "Dodatek"
-
-#: lib/examples/Articles:0
-msgid "10 Glossary"
+msgid "06 Acronym"
 msgstr ""
 
 #: lib/examples/Articles:0
@@ -23061,17 +23056,22 @@ msgstr "Seznam tabel"
 
 #: lib/examples/Articles:0
 #, fuzzy
+msgid "07 Part"
+msgstr "Del"
+
+#: lib/examples/Articles:0
+#, fuzzy
 msgid "08 Author"
 msgstr "Avtor"
 
 #: lib/examples/Articles:0
-msgid "06 Acronym"
-msgstr ""
+#, fuzzy
+msgid "09 Appendix"
+msgstr "Dodatek"
 
 #: lib/examples/Articles:0
-#, fuzzy
-msgid "07 Part"
-msgstr "Del"
+msgid "10 Glossary"
+msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -23090,13 +23090,13 @@ msgstr "Poglavje"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Main File"
-msgstr "Manjkajoči argument"
+msgid "Chapter 2"
+msgstr "Poglavje"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Chapter 2"
-msgstr "Poglavje"
+msgid "Main File"
+msgstr "Manjkajoči argument"
 
 #: lib/examples/Articles:0
 msgid "PhD Thesis"
@@ -39292,11 +39292,11 @@ msgstr "Neznana beseda:"
 #~ msgid "No Branches Set for Document!"
 #~ msgstr "Spis"
 
-#, fuzzy, c-format
+#, fuzzy
 #~ msgid "Start New Environment (%1$s)"
 #~ msgstr "Okolje Gather"
 
-#, fuzzy, c-format
+#, fuzzy
 #~ msgid "Start New Parent Environment (%1$s)"
 #~ msgstr "Okolje Gather"
 
@@ -39307,7 +39307,7 @@ msgstr "Neznana beseda:"
 #~ msgid "Verbatim Input*"
 #~ msgstr "Dobesedni vhod"
 
-#, fuzzy, c-format
+#, fuzzy
 #~ msgid "Information regarding %1$s '%2$s'"
 #~ msgstr "Ni podatkov za ogled "
 

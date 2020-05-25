@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2020-01-10 22:09-0500\n"
+"POT-Creation-Date: 2020-05-24 00:38-0400\n"
 "PO-Revision-Date: 2007-07-11 18:31+0100\n"
 "Last-Translator: Ramon Flores <inactive@inactive>\n"
 "Language-Team: Galician (inactive) <gl@li.org>\n"
@@ -22411,8 +22411,12 @@ msgstr "Material externo"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Minted Listings"
-msgstr "Lista de códigos de programación"
+msgid "Itemize Bullets"
+msgstr "Lista pontuada"
+
+#: lib/examples/Articles:0
+msgid "Feynman Diagrams"
+msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22421,8 +22425,8 @@ msgstr "Vista &preliminar imediata:"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "XY-Figure"
-msgstr "Figura"
+msgid "Minted Listings"
+msgstr "Lista de códigos de programación"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22431,15 +22435,11 @@ msgstr "&Inserido"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Itemize Bullets"
-msgstr "Lista pontuada"
+msgid "XY-Figure"
+msgstr "Figura"
 
 #: lib/examples/Articles:0
 msgid "XY-Pic"
-msgstr ""
-
-#: lib/examples/Articles:0
-msgid "Feynman Diagrams"
 msgstr ""
 
 #: lib/examples/Articles:0
@@ -22449,12 +22449,12 @@ msgstr "&Gráficos"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Serial Letter 3"
+msgid "Serial Letter 2"
 msgstr "Carta"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Serial Letter 2"
+msgid "Serial Letter 3"
 msgstr "Carta"
 
 #: lib/examples/Articles:0
@@ -22469,6 +22469,15 @@ msgstr "Localización"
 
 #: lib/examples/Articles:0
 #, fuzzy
+msgid "LilyPond Book"
+msgstr "LilyPond"
+
+#: lib/examples/Articles:0
+msgid "Noweb Listerrors"
+msgstr ""
+
+#: lib/examples/Articles:0
+#, fuzzy
 msgid "Multilingual Captions"
 msgstr "Opcións LaTeX adicionais"
 
@@ -22478,17 +22487,8 @@ msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "LilyPond Book"
-msgstr "LilyPond"
-
-#: lib/examples/Articles:0
-#, fuzzy
 msgid "Noweb2LyX"
 msgstr "Noweb"
-
-#: lib/examples/Articles:0
-msgid "Noweb Listerrors"
-msgstr ""
 
 #: lib/examples/Articles:0 src/frontends/qt/GuiDocument.cpp:1748
 #, fuzzy
@@ -22502,13 +22502,13 @@ msgstr "TransparénciaApaisada"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Beamer (Complex)"
-msgstr "Nova nota:"
+msgid "Foils"
+msgstr "CabezalloDiapositiva"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Foils"
-msgstr "CabezalloDiapositiva"
+msgid "Beamer (Complex)"
+msgstr "Nova nota:"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22516,17 +22516,22 @@ msgid "Welcome"
 msgstr "Benvindo a LyX!"
 
 #: lib/examples/Articles:0
-msgid "Multilingual Typesetting with CJKutf8"
+msgid "Multilingual Typesetting with platex"
 msgstr ""
 
 #: lib/examples/Articles:0
-msgid "Multilingual Typesetting with platex"
+msgid "Multilingual Typesetting with CJKutf8"
 msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
 msgid "IEEE Transactions Journal"
 msgstr "Transición"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "Mathematical Monthly"
+msgstr "Símbolos fonéticos|S"
 
 #: lib/examples/Articles:0
 msgid "Springers Global Journal Template (V. 3)"
@@ -22539,13 +22544,37 @@ msgstr "Transición"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Mathematical Monthly"
-msgstr "Símbolos fonéticos|S"
+msgid "02 Foreword"
+msgstr "Palabra chave"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "00 Main File"
-msgstr "Falta argumento"
+msgid "01 Dedication"
+msgstr "Dedicatória"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "06 Part"
+msgstr "Parte"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "03 Preface"
+msgstr "Lugar"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "07 Chapter"
+msgstr "Capítulo"
+
+#: lib/examples/Articles:0
+#, fuzzy
+msgid "10 Solutions"
+msgstr "Solución"
+
+#: lib/examples/Articles:0
+msgid "05 Acronym"
+msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22559,13 +22588,8 @@ msgstr "Agradecimentos"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "10 Solutions"
-msgstr "Solución"
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "02 Foreword"
-msgstr "Palabra chave"
+msgid "09 Glossary"
+msgstr "Fechar"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22574,32 +22598,27 @@ msgstr "Apéndice"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "07 Chapter"
-msgstr "Capítulo"
+msgid "00 Main File"
+msgstr "Falta argumento"
 
 #: lib/examples/Articles:0
-#, fuzzy
-msgid "01 Dedication"
-msgstr "Dedicatória"
-
-#: lib/examples/Articles:0
-msgid "05 Acronym"
+msgid "06 Acronym"
 msgstr ""
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "03 Preface"
-msgstr "Lugar"
+msgid "05 Contributor List"
+msgstr "Lista de táboas"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "06 Part"
+msgid "07 Part"
 msgstr "Parte"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "09 Glossary"
-msgstr "Fechar"
+msgid "08 Author"
+msgstr "Autor"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22610,25 +22629,6 @@ msgstr "Apéndice"
 #, fuzzy
 msgid "10 Glossary"
 msgstr "Fechar"
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "05 Contributor List"
-msgstr "Lista de táboas"
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "08 Author"
-msgstr "Autor"
-
-#: lib/examples/Articles:0
-msgid "06 Acronym"
-msgstr ""
-
-#: lib/examples/Articles:0
-#, fuzzy
-msgid "07 Part"
-msgstr "Parte"
 
 #: lib/examples/Articles:0
 #, fuzzy
@@ -22647,13 +22647,13 @@ msgstr "Capítulo"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Main File"
-msgstr "Falta argumento"
+msgid "Chapter 2"
+msgstr "Capítulo"
 
 #: lib/examples/Articles:0
 #, fuzzy
-msgid "Chapter 2"
-msgstr "Capítulo"
+msgid "Main File"
+msgstr "Falta argumento"
 
 #: lib/examples/Articles:0
 msgid "PhD Thesis"
@@ -38798,7 +38798,6 @@ msgstr "Usuário descoñecido"
 #~ msgid "added text"
 #~ msgstr "texto engadido"
 
-#, no-c-format
 #~ msgid ""
 #~ "This accepts the normal strftime formats; see man strftime for full "
 #~ "details. E.g.\"%A, %e. %B %Y\"."
@@ -38913,11 +38912,11 @@ msgstr "Usuário descoñecido"
 #~ msgid "No Branches Set for Document!"
 #~ msgstr "Nengunha pola no documento!"
 
-#, fuzzy, c-format
+#, fuzzy
 #~ msgid "Start New Environment (%1$s)"
 #~ msgstr "Entorno Gather|G"
 
-#, fuzzy, c-format
+#, fuzzy
 #~ msgid "Start New Parent Environment (%1$s)"
 #~ msgstr "cria un novo entorno de texto matemático ($...$)"
 
@@ -38927,7 +38926,7 @@ msgstr "Usuário descoñecido"
 #~ msgid "Verbatim Input*"
 #~ msgstr "Entrada Literal*"
 
-#, fuzzy, c-format
+#, fuzzy
 #~ msgid "Information regarding %1$s '%2$s'"
 #~ msgstr "Sen información para editar %1$s"
 
